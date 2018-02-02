@@ -17,16 +17,21 @@ class HomeViewController: UIViewController {
 	
 	
 	// Outlets
-
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        bootstrapCollectionView()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func bootstrapCollectionView() {
+        collectionView.register(UINib(nibName: "PostCell", bundle: nil), forCellWithReuseIdentifier: "POST_CELL")
+        
+        guard let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout
+            else { return }
+        
+        layout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize
     }
     
 
@@ -44,15 +49,16 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDataSource {
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return 0
+		return 20
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		
-		return UICollectionViewCell()
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "POST_CELL", for: indexPath) as! PostCell
+        
+        cell.setData(BCPost())
+        
+		return cell
 	}
-	
-	
 }
 
 extension HomeViewController: MenuViewHelperDelegate {

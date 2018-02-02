@@ -38,7 +38,7 @@ struct BCAlertDataStore {
 		BCAlertConfiguration.logout : ["title" : "Logout",
 									   "message" : "Logout of your account?",
 									   "style" : UIAlertControllerStyle.alert,
-                                       "actions" : [BCAlertActionConfiguration.okAction,        BCAlertActionConfiguration.cancelAction]]
+                                       "actions" : [BCAlertActionConfiguration.yesAction,        BCAlertActionConfiguration.noAction]]
 	]
 }
 

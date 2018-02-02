@@ -9,18 +9,18 @@
 import UIKit
 
 extension UIAlertController {
-    
     /*
     Fetches data from store, configures, and presents UIAlertController
     @parameter configuration - an enum used to indicate the UIAlertController's property values.
-    @usage - self.presentViewController(UIAlertController(configuration:), animated: completion:)
+    @usage - self.presentViewController(BCAlertController(configuration:), animated: completion:)
     */
+
     convenience init(configuration: BCAlertConfiguration) {
         let alertData = configuration.alertData
-
+        
         self.init(title: alertData.title, message: alertData.message, preferredStyle: alertData.style)
         
-        configuration.setActions()
+        configuration.setActions(self)
     }
 }
 

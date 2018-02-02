@@ -8,13 +8,18 @@
 
 import UIKit
 
-protocol BCAlertable {
+/** @protocol BCAlertable
+    @var alertData - fetches data from store that is needed to initialize UIAlertController
+    @func setActions - adds all actions required for the UIAlertController
+*/
+
+protocol BCAlertConfigurable {
 	var alertData: BCAlertDataStore { get }
     
     func setActions(_ alertController: UIAlertController)
 }
 
-enum BCAlertConfiguration: BCAlertable {
+enum BCAlertConfiguration: BCAlertConfigurable {
 	case invalidCredentials
 	case networkError
 	case logout

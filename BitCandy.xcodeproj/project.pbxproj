@@ -7,16 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE0D8CB31FFED97A004E609C /* BCNetworkRequestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D8CB21FFED97A004E609C /* BCNetworkRequestConfiguration.swift */; };
+		CE0D8CB31FFED97A004E609C /* BCURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D8CB21FFED97A004E609C /* BCURLRequest.swift */; };
 		CE35447F1FFD9D6200271078 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35447E1FFD9D6200271078 /* AppDelegate.swift */; };
 		CE3544871FFD9D6300271078 /* BitCandy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE3544851FFD9D6300271078 /* BitCandy.xcdatamodeld */; };
 		CE3544891FFD9D6300271078 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3544881FFD9D6300271078 /* Assets.xcassets */; };
 		CE35448C1FFD9D6300271078 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE35448A1FFD9D6300271078 /* LaunchScreen.storyboard */; };
-		CE3544951FFD9E8B00271078 /* BCNetworkingLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3544941FFD9E8B00271078 /* BCNetworkingLayers.swift */; };
-		CE4294A92005A797003A7076 /* BCNetworkRequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4294A82005A797003A7076 /* BCNetworkRequestOperation.swift */; };
-		CE4294AD2007634F003A7076 /* BCAuthenticationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4294AC2007634F003A7076 /* BCAuthenticationClient.swift */; };
-		CE4294AF2007639C003A7076 /* BCRegisterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4294AE2007639C003A7076 /* BCRegisterClient.swift */; };
-		CE4294B1200763A8003A7076 /* BCPostsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4294B0200763A8003A7076 /* BCPostsClient.swift */; };
+		CE3544951FFD9E8B00271078 /* BCNetworkingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3544941FFD9E8B00271078 /* BCNetworkingLayer.swift */; };
+		CE4294A92005A797003A7076 /* BCURLSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4294A82005A797003A7076 /* BCURLSessionService.swift */; };
 		CE4294B82007656F003A7076 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4294B62007656F003A7076 /* HomeViewController.swift */; };
 		CE4294BC20076582003A7076 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4294BA20076582003A7076 /* MenuViewController.swift */; };
 		CE4294C0200766BD003A7076 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4294BE200766BD003A7076 /* AboutViewController.swift */; };
@@ -29,7 +26,7 @@
 		CEB7D7B1200CB7A900041AAA /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D7AF200CB7A900041AAA /* SplashViewController.swift */; };
 		CEB7D7B9200CD80500041AAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB7D7B8200CD80500041AAA /* Main.storyboard */; };
 		CEB7D7BD200ED6E400041AAA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D7BC200ED6E300041AAA /* UserProfile.swift */; };
-		CEB7D7BF200EFD9C00041AAA /* BCNetworkResponseDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D7BE200EFD9C00041AAA /* BCNetworkResponseDeserializer.swift */; };
+		CEB7D7BF200EFD9C00041AAA /* BCNetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D7BE200EFD9C00041AAA /* BCNetworkResult.swift */; };
 		CEB7D7C1200F054200041AAA /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D7C0200F054200041AAA /* AuthenticationViewController.swift */; };
 		CEB7D7C4200F10A300041AAA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D7C3200F10A300041AAA /* Post.swift */; };
 		CEB7D7C72010608D00041AAA /* BCNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB7D7C62010608D00041AAA /* BCNavigationBar.swift */; };
@@ -38,22 +35,28 @@
 		CEFB7B572013191200CE5197 /* BCAlertConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB7B562013191200CE5197 /* BCAlertConfiguration.swift */; };
 		CEFB7B592013191C00CE5197 /* BCAlertActionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB7B582013191C00CE5197 /* BCAlertActionConfiguration.swift */; };
 		CEFB7B5B2013192900CE5197 /* BCAlertDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB7B5A2013192900CE5197 /* BCAlertDataStore.swift */; };
+		FB1A188520243DD800A4EA8E /* Arimo-Regular-Latin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FB1A188420243DD800A4EA8E /* Arimo-Regular-Latin.ttf */; };
+		FB20302B20185DDA0043A660 /* Dictionary+BCSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20302A20185DDA0043A660 /* Dictionary+BCSerializable.swift */; };
+		FB203033201D1CF00043A660 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB203031201D1CF00043A660 /* PostCell.swift */; };
+		FB203034201D1CF00043A660 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB203032201D1CF00043A660 /* PostCell.xib */; };
+		FB203037201D1E410043A660 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB203035201D1E410043A660 /* PersonCell.swift */; };
+		FB203038201D1E410043A660 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB203036201D1E410043A660 /* PersonCell.xib */; };
+		FB20303B201D1E600043A660 /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB203039201D1E600043A660 /* AdCell.swift */; };
+		FB20303C201D1E600043A660 /* AdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB20303A201D1E600043A660 /* AdCell.xib */; };
+		FB26E48020201C260093B52B /* BCURLRequestParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB26E47F20201C260093B52B /* BCURLRequestParameters.swift */; };
 		FBCFD9C62013564000277ED5 /* BCAlertActionDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCFD9C52013564000277ED5 /* BCAlertActionDataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE0D8CB21FFED97A004E609C /* BCNetworkRequestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCNetworkRequestConfiguration.swift; sourceTree = "<group>"; };
+		CE0D8CB21FFED97A004E609C /* BCURLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCURLRequest.swift; sourceTree = "<group>"; };
 		CE35447B1FFD9D6200271078 /* BitCandy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitCandy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE35447E1FFD9D6200271078 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3544861FFD9D6300271078 /* BitCandy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BitCandy.xcdatamodel; sourceTree = "<group>"; };
 		CE3544881FFD9D6300271078 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE35448B1FFD9D6300271078 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE35448D1FFD9D6300271078 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE3544941FFD9E8B00271078 /* BCNetworkingLayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCNetworkingLayers.swift; sourceTree = "<group>"; };
-		CE4294A82005A797003A7076 /* BCNetworkRequestOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCNetworkRequestOperation.swift; sourceTree = "<group>"; };
-		CE4294AC2007634F003A7076 /* BCAuthenticationClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCAuthenticationClient.swift; sourceTree = "<group>"; };
-		CE4294AE2007639C003A7076 /* BCRegisterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCRegisterClient.swift; sourceTree = "<group>"; };
-		CE4294B0200763A8003A7076 /* BCPostsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCPostsClient.swift; sourceTree = "<group>"; };
+		CE3544941FFD9E8B00271078 /* BCNetworkingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCNetworkingLayer.swift; sourceTree = "<group>"; };
+		CE4294A82005A797003A7076 /* BCURLSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCURLSessionService.swift; sourceTree = "<group>"; };
 		CE4294B62007656F003A7076 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CE4294BA20076582003A7076 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CE4294BE200766BD003A7076 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +69,7 @@
 		CEB7D7AF200CB7A900041AAA /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		CEB7D7B8200CD80500041AAA /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CEB7D7BC200ED6E300041AAA /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		CEB7D7BE200EFD9C00041AAA /* BCNetworkResponseDeserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCNetworkResponseDeserializer.swift; sourceTree = "<group>"; };
+		CEB7D7BE200EFD9C00041AAA /* BCNetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCNetworkResult.swift; sourceTree = "<group>"; };
 		CEB7D7C0200F054200041AAA /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		CEB7D7C3200F10A300041AAA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		CEB7D7C62010608D00041AAA /* BCNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCNavigationBar.swift; sourceTree = "<group>"; };
@@ -75,6 +78,15 @@
 		CEFB7B562013191200CE5197 /* BCAlertConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCAlertConfiguration.swift; sourceTree = "<group>"; };
 		CEFB7B582013191C00CE5197 /* BCAlertActionConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCAlertActionConfiguration.swift; sourceTree = "<group>"; };
 		CEFB7B5A2013192900CE5197 /* BCAlertDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BCAlertDataStore.swift; sourceTree = "<group>"; };
+		FB1A188420243DD800A4EA8E /* Arimo-Regular-Latin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arimo-Regular-Latin.ttf"; sourceTree = "<group>"; };
+		FB20302A20185DDA0043A660 /* Dictionary+BCSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+BCSerializable.swift"; sourceTree = "<group>"; };
+		FB203031201D1CF00043A660 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		FB203032201D1CF00043A660 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		FB203035201D1E410043A660 /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		FB203036201D1E410043A660 /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
+		FB203039201D1E600043A660 /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
+		FB20303A201D1E600043A660 /* AdCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdCell.xib; sourceTree = "<group>"; };
+		FB26E47F20201C260093B52B /* BCURLRequestParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCURLRequestParameters.swift; sourceTree = "<group>"; };
 		FBCFD9C52013564000277ED5 /* BCAlertActionDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BCAlertActionDataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,13 +124,14 @@
 				CEB7D7C52010604900041AAA /* Views */,
 				CEB7D7C2200F108A00041AAA /* Models */,
 				CEB7D7A1200CAD1C00041AAA /* Menu Helpers */,
+				FB203030201D1CC50043A660 /* Collection View Cells */,
 				CE4294AA20076326003A7076 /* View Controllers */,
-				CE4294AB2007633A003A7076 /* Clients */,
 				CE3544931FFD9E2200271078 /* Services */,
 				CE35447E1FFD9D6200271078 /* AppDelegate.swift */,
 				CE3544881FFD9D6300271078 /* Assets.xcassets */,
 				CE35448A1FFD9D6300271078 /* LaunchScreen.storyboard */,
 				CE35448D1FFD9D6300271078 /* Info.plist */,
+				FB1A188420243DD800A4EA8E /* Arimo-Regular-Latin.ttf */,
 				CE3544851FFD9D6300271078 /* BitCandy.xcdatamodeld */,
 				CEB7D7B8200CD80500041AAA /* Main.storyboard */,
 			);
@@ -146,16 +159,6 @@
 				CEB7D7C0200F054200041AAA /* AuthenticationViewController.swift */,
 			);
 			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		CE4294AB2007633A003A7076 /* Clients */ = {
-			isa = PBXGroup;
-			children = (
-				CE4294AC2007634F003A7076 /* BCAuthenticationClient.swift */,
-				CE4294AE2007639C003A7076 /* BCRegisterClient.swift */,
-				CE4294B0200763A8003A7076 /* BCPostsClient.swift */,
-			);
-			path = Clients;
 			sourceTree = "<group>";
 		};
 		CEB7D7A1200CAD1C00041AAA /* Menu Helpers */ = {
@@ -198,6 +201,7 @@
 		CEFB7B4F2013172900CE5197 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FB20302A20185DDA0043A660 /* Dictionary+BCSerializable.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -205,10 +209,11 @@
 		CEFB7B52201318C200CE5197 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				CE3544941FFD9E8B00271078 /* BCNetworkingLayers.swift */,
-				CE4294A82005A797003A7076 /* BCNetworkRequestOperation.swift */,
-				CE0D8CB21FFED97A004E609C /* BCNetworkRequestConfiguration.swift */,
-				CEB7D7BE200EFD9C00041AAA /* BCNetworkResponseDeserializer.swift */,
+				CE3544941FFD9E8B00271078 /* BCNetworkingLayer.swift */,
+				FB26E47F20201C260093B52B /* BCURLRequestParameters.swift */,
+				CE0D8CB21FFED97A004E609C /* BCURLRequest.swift */,
+				CEB7D7BE200EFD9C00041AAA /* BCNetworkResult.swift */,
+				CE4294A82005A797003A7076 /* BCURLSessionService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -223,6 +228,19 @@
 				FBCFD9C52013564000277ED5 /* BCAlertActionDataStore.swift */,
 			);
 			path = Alerts;
+			sourceTree = "<group>";
+		};
+		FB203030201D1CC50043A660 /* Collection View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FB203031201D1CF00043A660 /* PostCell.swift */,
+				FB203032201D1CF00043A660 /* PostCell.xib */,
+				FB203035201D1E410043A660 /* PersonCell.swift */,
+				FB203036201D1E410043A660 /* PersonCell.xib */,
+				FB203039201D1E600043A660 /* AdCell.swift */,
+				FB20303A201D1E600043A660 /* AdCell.xib */,
+			);
+			path = "Collection View Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,9 +303,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB20303C201D1E600043A660 /* AdCell.xib in Resources */,
 				CE35448C1FFD9D6300271078 /* LaunchScreen.storyboard in Resources */,
 				CEB7D7B9200CD80500041AAA /* Main.storyboard in Resources */,
 				CE3544891FFD9D6300271078 /* Assets.xcassets in Resources */,
+				FB203038201D1E410043A660 /* PersonCell.xib in Resources */,
+				FB203034201D1CF00043A660 /* PostCell.xib in Resources */,
+				FB1A188520243DD800A4EA8E /* Arimo-Regular-Latin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,33 +322,35 @@
 			files = (
 				CEFB7B592013191C00CE5197 /* BCAlertActionConfiguration.swift in Sources */,
 				CEFB7B4E2013155E00CE5197 /* MarketInfoViewController.swift in Sources */,
+				FB203033201D1CF00043A660 /* PostCell.swift in Sources */,
 				CEB7D7A6200CAD2900041AAA /* DismissMenuAnimator.swift in Sources */,
 				CEB7D7C4200F10A300041AAA /* Post.swift in Sources */,
+				FB203037201D1E410043A660 /* PersonCell.swift in Sources */,
 				CE3544871FFD9D6300271078 /* BitCandy.xcdatamodeld in Sources */,
-				CE3544951FFD9E8B00271078 /* BCNetworkingLayers.swift in Sources */,
+				CE3544951FFD9E8B00271078 /* BCNetworkingLayer.swift in Sources */,
 				CEB7D7B1200CB7A900041AAA /* SplashViewController.swift in Sources */,
 				FBCFD9C62013564000277ED5 /* BCAlertActionDataStore.swift in Sources */,
-				CE0D8CB31FFED97A004E609C /* BCNetworkRequestConfiguration.swift in Sources */,
+				CE0D8CB31FFED97A004E609C /* BCURLRequest.swift in Sources */,
 				CEFB7B552013190200CE5197 /* BCAlertControllerExtension.swift in Sources */,
-				CE4294AF2007639C003A7076 /* BCRegisterClient.swift in Sources */,
 				CEB7D7A9200CAD2900041AAA /* PresentMenuAnimator.swift in Sources */,
+				FB26E48020201C260093B52B /* BCURLRequestParameters.swift in Sources */,
 				CE4294BC20076582003A7076 /* MenuViewController.swift in Sources */,
 				CEB7D7A7200CAD2900041AAA /* MenuHelper.swift in Sources */,
-				CE4294A92005A797003A7076 /* BCNetworkRequestOperation.swift in Sources */,
+				CE4294A92005A797003A7076 /* BCURLSessionService.swift in Sources */,
 				CEB7D7C1200F054200041AAA /* AuthenticationViewController.swift in Sources */,
 				CE4294C0200766BD003A7076 /* AboutViewController.swift in Sources */,
-				CEB7D7BF200EFD9C00041AAA /* BCNetworkResponseDeserializer.swift in Sources */,
+				CEB7D7BF200EFD9C00041AAA /* BCNetworkResult.swift in Sources */,
 				CEB7D7C72010608D00041AAA /* BCNavigationBar.swift in Sources */,
 				CEB7D7AE200CB3B400041AAA /* HomeViewControllerViewModel.swift in Sources */,
 				CE4294B82007656F003A7076 /* HomeViewController.swift in Sources */,
-				CE4294AD2007634F003A7076 /* BCAuthenticationClient.swift in Sources */,
 				CEB7D7BD200ED6E400041AAA /* UserProfile.swift in Sources */,
-				CE4294B1200763A8003A7076 /* BCPostsClient.swift in Sources */,
 				CEB7D7AB200CAE4300041AAA /* MenuViewHelper.swift in Sources */,
 				CEB7D7A8200CAD2900041AAA /* Interactor.swift in Sources */,
 				CEFB7B5B2013192900CE5197 /* BCAlertDataStore.swift in Sources */,
 				CEFB7B572013191200CE5197 /* BCAlertConfiguration.swift in Sources */,
 				CE35447F1FFD9D6200271078 /* AppDelegate.swift in Sources */,
+				FB20303B201D1E600043A660 /* AdCell.swift in Sources */,
+				FB20302B20185DDA0043A660 /* Dictionary+BCSerializable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +482,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UDW6TT4A9G;
 				INFOPLIST_FILE = BitCandy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThomasGraninger.BitCandy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -474,7 +498,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UDW6TT4A9G;
 				INFOPLIST_FILE = BitCandy/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThomasGraninger.BitCandy;
 				PRODUCT_NAME = "$(TARGET_NAME)";

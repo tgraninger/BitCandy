@@ -8,21 +8,24 @@
 
 import UIKit
 
-protocol BCAlertActionable {
+protocol BCAlertActionConfigurable {
     func configureAction() -> UIAlertAction
 }
 
-enum BCAlertActionConfiguration: BCAlertActionable {
+enum BCAlertActionConfiguration: BCAlertActionConfigurable {
     case okAction
     case cancelAction
-    case navigationAction
-    case logoutAction
+    case yesAction
+    case noAction
     
     func configureAction() -> UIAlertAction {
         let data = BCAlertActionDataStore(configuration: self)
         
         return UIAlertAction(title: data.title, style: data.style, handler: nil)
     }
+}
 
+protocol BCAlertActionDelegate {
+    func handleAlertAction(_ action: UIAlertAction)
 }
 
